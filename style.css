@@ -6,6 +6,10 @@
   font-family: 'Glory', sans-serif;
 }
 
+:root{
+  --black = black;  
+}
+
 .navbar{
   height: 80px;
   display: flex;
