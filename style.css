@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
 :root{
-  --black: black;
-  --blue: blue;
-  --white: white;  
+  --black: #000;
+  --white: #fff;
+  --blue:  #0476D0;
 }
 
 *{
-  background: var(--black);
   box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  font-family: 'Glory', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .navbar{
+  background: #131313;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -35,7 +38,8 @@
 }
 
 #navbar_logo{
-  background-image: linear-gradient(to top, var(--blue) 0%, var(--white) 100%);
+  background-color: white;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
