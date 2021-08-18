@@ -3,7 +3,7 @@
 :root{
   --black: #000;
   --white: #fff;
-  --blue:  #0476D0;
+  --blue:  #00ced1;
 }
 
 *{
@@ -92,7 +92,8 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #00ced1;
+  background: var(--blue);
+  /* Gradiente que não vamos mais usar */
   /* background: -webkit-linear-gradient(to right, var(--blue), blue, #000082); */
   /* background: linear-gradient(to right, var(--blue), #00ced1, #000082 ); */
   color: #fff;
