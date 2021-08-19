@@ -208,8 +208,7 @@
 }
 
 /* Área Inicial */
-header
-{
+header{
   position: absolute;
   top: 0;
   left: 0;
@@ -220,8 +219,8 @@ header
   justify-content: space-between;
   align-items: center;
 }
-header .logo
-{
+
+header .logo{
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
