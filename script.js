@@ -3,12 +3,12 @@ const menuNavegacao = document.querySelector('.menu_navegacao');
 const logoMenu = document.querySelector('#logo_menu');
 
 // Mostra o menu Mobile
-const mobileMenu = () => {
+const menuMobile = () => {
   menu.classList.toggle('esta-ativado');
   menuNavegacao.classList.toggle('ativado');
 };
 
-menu.addEventListener('click', mobileMenu);
+menu.addEventListener('click', menuMobile);
 
 // Close Mobile Menu when clicking on a menu item
 const hideMobileMenu = () => {
@@ -18,7 +18,6 @@ const hideMobileMenu = () => {
     menuNavegacao.classList.remove('active');
   };
 };
-
 
 menuNavegacao.addEventListener('click', hideMobileMenu);
 logoMenu.addEventListener('click', hideMobileMenu);
