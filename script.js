@@ -2,7 +2,7 @@ const menu = document.querySelector('#menu_mobile');
 const menuNavegacao = document.querySelector('.menu_navegacao');
 const logoMenu = document.querySelector('#logo_menu');
 
-// Display Mobile Menu
+// Mostra o menu Mobile
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
   menuNavegacao.classList.toggle('active');
