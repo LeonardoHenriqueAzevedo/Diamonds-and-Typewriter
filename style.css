@@ -208,7 +208,7 @@
 }
 
 /* Área Inicial */
-.showcase{
+.area-video{
   position: absolute;
   right: 0;
   width: 100%;
@@ -222,7 +222,7 @@
   z-index: 2;
 }
 
-.showcase video{
+.area-video video{
   position: absolute;
   top: 0;
   left: 0;
@@ -232,7 +232,7 @@
   opacity: 0.8;
 }
 
-.overlay{
+.camada-azul-cima{
   position: absolute;
   top: 0;
   left: 0;
@@ -242,12 +242,12 @@
   mix-blend-mode: overlay;
 }
 
-.text{
-  position: relative;
-  z-index: 10;
+.textos-inicial{
+  position: absolute;
+  z-index: 100;
 }
 
-.text h2{
+.textos-inicial h2{
   font-size: 5em;
   font-weight: 800;
   color: #fff;
@@ -255,7 +255,7 @@
   text-transform: uppercase;
 }
 
-.text h3{
+.textos-inicial h3{
   font-size: 4em;
   font-weight: 700;
   color: #fff;
@@ -263,7 +263,7 @@
   text-transform: uppercase;
 }
 
-.text p{
+.textos-inicial p{
   font-size: 1.1em;
   color: #fff;
   margin: 20px 0;
@@ -271,21 +271,21 @@
   max-width: 700px;
 }
 
-.text a{
+.textos-inicial a{
   display: inline-block;
   font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
+  background: var(--blue);
+  padding: 20px 100px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   margin-top: 10px;
-  color: #111;
+  color: white;
   letter-spacing: 2px;
   transition: 0.2s;
 }
 
-.text a:hover{
+.textos-inicial a:hover{
   letter-spacing: 6px;
 }
 
@@ -315,16 +315,16 @@
 }
 
 @media (max-width: 991px) {
-  .showcase,
-  .showcase header{
+  .area-video,
+  .area-video header{
     padding: 40px;
   }
-  
-  .text h2{
+
+  .textos-inicial h2{
     font-size: 3em;
   }
 
-  .text h3{
+  .textos-inicial h3{
     font-size: 2em;
   }
 }
