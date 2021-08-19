@@ -39,7 +39,7 @@
 }
 
 #logo_menu{
-  background-color: var(--blue);
+  background-color: var(--white);
   background-image: linear-gradient(to top, var(--white) 28%, var(--blue) 100%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -198,5 +198,11 @@
 
   #menu_mobile.esta-ativado .barrinha:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu_navegacao.ativado{
+    height: 90vh;
   }
 }
