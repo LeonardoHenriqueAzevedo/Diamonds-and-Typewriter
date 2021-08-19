@@ -97,7 +97,7 @@
   /* Gradiente que não vamos mais usar 
   /* background: -webkit-linear-gradient(to right, var(--blue), blue, #000082); */
   /* background: linear-gradient(to right, var(--blue), #00ced1, #000082 ); */
-  color: #fff;
+  color: var(--white);
   transition: all 0.3s ease;
 }
 
@@ -148,7 +148,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #fff;
+    background: var(--white);
   }
 
   .item_navegacao{
@@ -217,7 +217,7 @@
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  background: #111;
+  background: var(--black);
   transition: 0.5s;
   z-index: 2;
 }
@@ -250,22 +250,34 @@
 .textos-inicial h2{
   font-size: 5em;
   font-weight: 800;
-  color: #fff;
+  color: var(--white);
+  /* Gradiente
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-image: linear-gradient(to bottom, var(--white) 28%, var(--blue) 100%); 
+  */
   line-height: 1em;
   text-transform: uppercase;
 }
 
+/* .textos-inicial h2::after{
+  content: "|";
+  margin-left: 5px;
+} */
+
 .textos-inicial h3{
   font-size: 4em;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   line-height: 1em;
   text-transform: uppercase;
 }
 
 .textos-inicial p{
   font-size: 1.1em;
-  color: #fff;
+  color: var(--white);
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
@@ -280,16 +292,17 @@
   text-decoration: none;
   font-weight: bold;
   margin-top: 10px;
-  color: white;
+  color: var(--white);
   letter-spacing: 2px;
   transition: 0.2s;
 }
 
 .textos-inicial a:hover{
   transform: scale(110%);
+  opacity: 0.9;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .area-video,
   .area-video header{
     padding: 40px;
@@ -317,14 +330,23 @@
   }
 
   .textos-inicial a{
-    padding: 20px 50px;
+    padding: 15px 40px;
   }
+}
 
+@media (max-width: 290px) {
   .textos-inicial h2{
-    font-size: 3em;
+    font-size: 2em;
+  } 
+  .textos-inicial h3{
+    font-size: 1.6em;
   }
 
-  .textos-inicial h3{
-    font-size: 2em;
+  .textos-inicial p{
+    font-size: 1em;
+  }
+
+  .textos-inicial a{
+    padding: 15px 20px;
   }
 }
