@@ -39,7 +39,7 @@
 }
 
 #logo_menu{
-  background-color: var(--white);
+  background-color: var(--blue);
   background-image: linear-gradient(to top, var(--white) 28%, var(--blue) 100%);
   background-size: 100%;
   -webkit-background-clip: text;
