@@ -14,8 +14,8 @@ menu.addEventListener('click', menuMobile);
 const hideMobileMenu = () => {
   const menuBars = document.querySelector('.esta-ativado');
   if (window.innerWidth <= 768 && menuBars) {
-    menu.classList.toggle('is-active');
-    menuNavegacao.classList.remove('active');
+    menu.classList.toggle('esta-ativado');
+    menuNavegacao.classList.remove('ativado');
   };
 };
 
