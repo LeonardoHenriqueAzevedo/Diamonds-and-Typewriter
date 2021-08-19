@@ -262,10 +262,21 @@
   text-transform: uppercase;
 }
 
-/* .textos-inicial h2::after{
+.textos-inicial p::after{
   content: "|";
   margin-left: 5px;
-} */
+  opacity: 1;
+  animation: piscando .7s infinite;
+}
+
+@keyframes piscando{
+  0%, 100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
 
 .textos-inicial h3{
   font-size: 4em;

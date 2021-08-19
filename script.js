@@ -25,16 +25,17 @@ logoMenu.addEventListener('click', hideMobileMenu);
 
 // Efeito de digitar no título
 const tituloAreaInicial = document.querySelector("h2");
+const a = document.querySelector("p");
 
 function efeitoEscrever(el) {
   const textoNoArray = el.innerHTML.split("");
   el.innerHTML = '';
   textoNoArray.forEach((letra, index) => {
-    setTimeout(() => el.innerHTML += letra, 75 * index);
+    setTimeout(() => el.innerHTML += letra, 50 * index);
   });
 }
 
-efeitoEscrever(tituloAreaInicial);
+efeitoEscrever(a);
 
 // Serve para ficar mostrando o menu seguindo a pessoa enquanto está ativado
 // const highlightMenu = () => {
