@@ -31,7 +31,7 @@ function efeitoEscrever(el) {
   const textoNoArray = el.innerHTML.split("");
   el.innerHTML = '';
   textoNoArray.forEach((letra, index) => {
-    setTimeout(() => el.innerHTML += letra, 50 * index);
+    setTimeout(() => el.innerHTML += letra, 35 * index);
   });
 }
 
