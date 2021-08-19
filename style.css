@@ -187,6 +187,7 @@
     cursor: pointer;
   }
 
+  /* Transforma as barrinhas em X */
   #menu_mobile.esta-ativado .barrinha:nth-child(2){
     opacity: 0;
   }

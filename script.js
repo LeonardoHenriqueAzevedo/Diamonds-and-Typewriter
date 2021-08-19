@@ -22,7 +22,7 @@ const hideMobileMenu = () => {
 menuNavegacao.addEventListener('click', hideMobileMenu);
 logoMenu.addEventListener('click', hideMobileMenu);
 
-// Para ficar mostrando o menu enquanto está ativado
+// Serve para ficar mostrando o menu seguindo a pessoa enquanto está ativado
 const highlightMenu = () => {
   const element = document.querySelector('.highlight');
   const homeMenu = document.querySelector('#home-page');
