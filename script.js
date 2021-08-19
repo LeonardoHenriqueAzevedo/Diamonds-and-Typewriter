@@ -4,13 +4,26 @@ const logoMenu = document.querySelector('#logo_menu');
 
 // Mostra o menu Mobile
 const mobileMenu = () => {
-  menu.classList.toggle('is-active');
-  menuNavegacao.classList.toggle('active');
+  menu.classList.toggle('esta-ativado');
+  menuNavegacao.classList.toggle('ativado');
 };
 
 menu.addEventListener('click', mobileMenu);
 
-// Show active menu when scrolling
+// Close Mobile Menu when clicking on a menu item
+const hideMobileMenu = () => {
+  const menuBars = document.querySelector('.esta-ativado');
+  if (window.innerWidth <= 768 && menuBars) {
+    menu.classList.toggle('is-active');
+    menuNavegacao.classList.remove('active');
+  };
+};
+
+
+menuNavegacao.addEventListener('click', hideMobileMenu);
+logoMenu.addEventListener('click', hideMobileMenu);
+
+// Para ficar mostrando o menu enquanto está ativado
 const highlightMenu = () => {
   const element = document.querySelector('.highlight');
   const homeMenu = document.querySelector('#home-page');
@@ -43,15 +56,3 @@ const highlightMenu = () => {
 
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
-
-// Close Mobile Menu when clicking on a menu item
-const hideMobileMenu = () => {
-  const menuBars = document.querySelector('.is-active');
-  if (window.innerWidth <= 768 && menuBars) {
-    menu.classList.toggle('is-active');
-    menuNavegacao.classList.remove('active');
-  };
-};
-
-menuNavegacao.addEventListener('click', hideMobileMenu);
-logoMenu.addEventListener('click', hideMobileMenu);

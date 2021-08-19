@@ -129,7 +129,7 @@
     z-index: -1;
   }
 
-  .menu_navegacao.active{
+  .menu_navegacao.ativado{
     background: #131313;
     top: 100%;
     opacity: 1;
@@ -187,15 +187,15 @@
     cursor: pointer;
   }
 
-  #menu_mobile.is-active .barrinha:nth-child(2){
+  #menu_mobile.esta-ativado .barrinha:nth-child(2){
     opacity: 0;
   }
 
-  #menu_mobile.is-active .barrinha:nth-child(1){
+  #menu_mobile.esta-ativado .barrinha:nth-child(1){
     transform: translateY(8px) rotate(45deg);
   }  
 
-  #menu_mobile.is-active .barrinha:nth-child(3){
+  #menu_mobile.esta-ativado .barrinha:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
 }
