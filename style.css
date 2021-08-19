@@ -286,10 +286,10 @@
 }
 
 .textos-inicial a:hover{
-  letter-spacing: 6px;
+  transform: scale(110%);
 }
 
-.social{
+.redes-social-inicial{
   position: absolute;
   z-index: 10;
   bottom: 20px;
@@ -298,11 +298,11 @@
   align-items: center;
 }
 
-.social li{
+.redes-social-inicial li{
   list-style: none;
 }
 
-.social li a{
+.redes-social-inicial li a{
   display: inline-block;
   margin-right: 20px;
   filter: invert(1);
@@ -310,7 +310,7 @@
   transition: 0.5s;
 }
 
-.social li a:hover{
+.redes-social-inicial li a:hover{
   transform: scale(0.5) translateY(-15px);
 }
 
@@ -318,6 +318,17 @@
   .area-video,
   .area-video header{
     padding: 40px;
+  }
+
+  .textos-inicial h2{
+    font-size: 2.5em;
+  } 
+  .textos-inicial h3{
+    font-size: 2em;
+  }
+
+  .textos-inicial a{
+    padding: 20px 50px;
   }
 
   .textos-inicial h2{
