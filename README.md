@@ -1,2 +1,2 @@
 # NewProject
- Project....
+ Project.
