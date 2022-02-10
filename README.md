@@ -11,3 +11,6 @@ This project it's fully responsive with a menu, a video background and a typewri
 - **HTML**
 - **CSS**
 - **JS**
+
+# 📝 License
+This project have the license of the [MIT](./LICENSE).
