@@ -3,5 +3,5 @@ This project it's fully responsive with a menu, a video background and a typewri
 
 ## Interface 
 <h1 align="center">
-    <img alt="Doe_GIF" title="Doe_Interface_GIF" src="github/Doe_Website_GIF.gif">
+    <img alt="diamonds_type_GIF" title="interface_GIF" src="github/diamonds_typewriter.gif">
 </h1>
